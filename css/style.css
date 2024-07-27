@@ -1,0 +1,72 @@
+/* comentario par CSS */
+/* 
+    selector {
+        propiedad: valor;
+        propiedad2: valor;
+        propiedad3: valor;
+    }
+*/
+
+/* estilos de header */
+header{
+    background-color: #2B2B2B;
+    /*background-color: rgba(40,140,35,60%);*/
+}
+
+header a img{
+    /*width: 800px;*/
+    width: 50%;
+}
+
+/*ruta de especifidad*/
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+/*
+Existen distintos tipos de selectores::after
+
+CLASS: Estaríamos hablando de apodos. 
+El apodo se puede ir reutilizando en las etiquetas.
+Más utilzado para HTML.
+
+ID: Un identificador unívoco. Ej. huella digital.
+Los ID no se pueder reutilizar en las etiquetas.
+Más reservado para programación. JavaScript.
+*/
+
+main div {
+    background-color: burlywood;
+}
+main div p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-size: 25px;
+}
+
+main ol li{
+    color: tomato
+}
+
+main ol .rosa{
+    color: palevioletred;
+    background-color: black;
+}
+
+main ol #verde{
+    color: green !important;
+    background-color: beige;
+}
+
+/* unidades de medida:
+Existen unidades relativas y absolutas.
+Absolutas: los píxeles (no van de la mano con lo responsive).
+Relativas: al tamaño de pantalla con el cual trabajamos.
+
+
+*/

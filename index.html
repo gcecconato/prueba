@@ -1,0 +1,118 @@
+<!-- declaramos el tipo de documento HTML -->
+<!DOCTYPE html>
+<!-- define bajo que lenguaje vamos a trabajar -->
+<html lang="en">
+<!-- la parte privada del documento, es una comunicacion entre el sito webe y el navegador -->
+<!-- 
+Atajos de teclado:
+alt+Z para bajar lineas de fila
+Ctrl+} para insertar comentario -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link de mi css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- link de mi tipografía -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title> sabado 01 - DW </title>
+    <!-- estilos desde el head -->
+     <style>
+        h1{
+            color: tomato;
+            text-align: center;
+        }
+        h2{
+          color: brown;
+          text-align: center;  
+        }
+     </style>
+</head>
+<!-- contiene el contenido del sitio -->
+<body>
+    <!-- estructura semántica de html -->
+    <!-- tipos de etiquetas: semántica (interpreta el navegador Web), genericas, 
+     Quien contiene y quien es contenido -->
+
+    <!-- etiqueta para el banner principal -->
+     <header>
+        <!-- imagen de logo -->
+        <a href=""> 
+            <img src="./img/Image20240629124828.png" alt="logo de proyecto, color negro con blanco, DEV WEB">
+        </a>
+        <!-- menu de navegacion-->
+        <nav>
+            <ul>
+                <li> 
+                    <a href="">
+                    Home
+                    </a> 
+                </li>
+                <li> 
+                    <a href="pages/productos.html">
+                        Productos 
+                    </a> 
+                </li>
+                <li>
+                    <a href="pages/productos.html">
+                        Contacto
+                    </a> 
+                </li>
+            </ul>
+        </nav>       
+     </header>
+    <!-- etiqueta para el contenido principal -->
+     <main>
+        <!-- etiqueta para título / subtítulos -->
+         <h1> Título de la noticia </h1>
+        <!-- etiqueta para párrafos -->
+        <!-- estilon en línea -->
+        <!-- CSS se maneja de la siguiente manera
+          
+         selector {
+                propiedad: valor;
+          } 
+        -->
+         <p style="color: blue; text-align: center;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa recusandae amet asperiores nihil libero, incidunt reiciendis non odio reprehenderit. Ab voluptates qui necessitatibus ratione. Similique voluptatem modi enim esse aperiam.</p>
+         <div>
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa quam in unde porro obcaecati cum expedita aliquam non, reprehenderit nam voluptatibus cupiditate ducimus natus illo ratione repellat labore. Est, qui?</p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque eos, provident eaque quis autem quam molestiae soluta, molestias aliquid unde totam accusantium hic. Repellendus illo ea minus delectus. Ipsam, ipsum.</p>
+        </div>
+        <!-- lista oredenada --> 
+         <ol>
+            <li class="rosa" id="verde" style="color:blue;"> Uno </li>
+            <li> Dos </li>
+            <li> ... </li>
+         </ol>
+
+         <h2> Otro título </h2>
+         <h2> Otro título2 </h2>
+         <h3> Otro título </h3>
+         <h6> Otro título </h6>
+
+        <!-- etiqueta iframe para video -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XyZXHhYOiFw?si=AoahXvTCpZGji5ku" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.8347516553413!2d-68.85926909999999!3d-32.955372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0bb34d7221c9%3A0x5bd3675cdf1dd052!2sPalmares!5e0!3m2!1ses-419!2sar!4v1719677464529!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      
+        </main>
+    <!-- etiqueta para el pie de pagina -->
+     <footer>
+        <!-- Aquí es común encontrar los créditos, derechos reservados, esta web fue hecha por... -->
+        <p> todos los derechos reservados </p>
+        <!-- Espacio para redes sociales -->
+         <div>
+            <!-- div es otra etiqueta de contención, no es semántica es genérica -->
+         </div>
+     </footer>
+     <!-- etiquetas de bloque 
+            son aquellas que ocupan el 100% del ancho del navegador 
+     -->
+     <!-- etiquetas de línea  
+            son aquellas que ocupan el ancho del contenido de dicha etiqueta 
+     -->
+    <span> etiqueta de línea </span>
+    <span> etiqueta dos de línea Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quibusdam modi reprehenderit praesentium sequi totam tempora consequuntur amet. Natus facere dolorum corporis, rem officia illo quo suscipit veritatis architecto qui.</span>       
+</body>
+</html>
